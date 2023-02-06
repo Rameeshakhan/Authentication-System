@@ -1,6 +1,13 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom"
+
 
 const Login = () => {
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    navigate("/home");
+
+  }
   return (
   <div className="container">
     <form>
@@ -17,7 +24,7 @@ const Login = () => {
     <input type="checkbox" class="form-check-input" id="exampleCheck1" />
     <label class="form-check-label" for="exampleCheck1">Check me out</label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" onClick={handleLogin}>Submit</button>
 </form>
   </div>
   )
