@@ -5,7 +5,7 @@ const morgan = require("morgan")
 const app = express();
 
 app.get("/", (req,res) => {
-    res.status(200).json({ message: "Server syas Hello"})
+    res.status(200).json({ message: "Hello from server side"})
 })
 
 //parses data of requests
