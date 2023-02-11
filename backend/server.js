@@ -24,7 +24,7 @@ if(process.env.NODE_ENV === "development"){
     app.use(morgan("dev"))
 }
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 5003;
 
 
 //routes
